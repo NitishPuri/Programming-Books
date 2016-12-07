@@ -33,5 +33,48 @@ And we have readers. So write your code thinking about the reader. Making code e
 Leave the campground cleaner than you found it.
 
 
-### Meaningful Names
+## Meaningful Names
 Names are everywhere in software. We name our variables, functions, arguments, classes and packages. We name our source files and the directories that contain them. We name our jar files and war files and ear files. Because we do so much of it, we’d better do it well.
+
+### Use Intention-Revealing Names
+We are serious about it.
+
+```
+int d; // elapsed time in days
+int elapsedTimeInDays;
+```
+
+```
+public List<int[]> getThem() {
+    List<int[]> list1 = new ArrayList<int[]>();
+    for(int[] x : theList)
+        if(x[0] == 4)
+            list1.add(x);
+    return list1;
+}
+
+public List<int[]> getFlaggedCells() {
+    List<int[]> flaggedCells = new ArrayList<int[]>();
+    for(int[] cell : gameBoard)
+        if(cell[STATUS_VALUE] == FLAGGED)
+            flaggedCells.add(cell);
+    return flaggedCells;
+}
+
+public List<Cell> getFlaggedCells() {
+    List<Cell> flaggedCells = new ArrayList<Cell>();
+    for(Cell cell : gameBoard)
+        if(cell.isFlagged())
+            flaggedCells.add(cell);
+    return flaggedCells;
+}
+```
+
+### Avoid Disambiguation
+Do not refer to a grouping of accounts as an `accountList` unless it's actually a List.
+
+Beware of using names which vary in small ways. How long does it take to spot the subtle difference between a `XYZControllerForEfficientHandlingOfStrings` in one module and, somewhere a little more distant, `XYZControllerForEfficientStorageOfStrings`? 
+
+
+### Make Meaningful Distinctions
+
