@@ -1,5 +1,6 @@
 # Clean Code
-
+[Table of Contents](https://github.com/npuri1903/Programming-Books/blob/master/Clean-Code/Index.md)
+![](http://ptgmedia.pearsoncmg.com/images/chap1_9780132350884/elementLinks/1-1fig_martin.jpg)
 ### There Will Be Code
 There will always be code, no matter how much higher level it can get. We can write tools that write code for us. But they have to be provided with a specification. That specification is code.
 
