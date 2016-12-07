@@ -34,6 +34,7 @@ Leave the campground cleaner than you found it.
 
 
 ## Meaningful Names
+![Image of children neading a name.](http://www.javaskool.com/codeResources/CleanCodeChapters/cleancodePics/meaningfulNames.png)
 Names are everywhere in software. We name our variables, functions, arguments, classes and packages. We name our source files and the directories that contain them. We name our jar files and war files and ear files. Because we do so much of it, we’d better do it well.
 
 ### Use Intention-Revealing Names
@@ -77,4 +78,34 @@ Beware of using names which vary in small ways. How long does it take to spot th
 
 
 ### Make Meaningful Distinctions
+```
+getActiveAccount();
+getActiveAccounts();
+getActiveAccountsInfo();
+```
+
+### Use Pronounceable Names
+If you can't pronounce it you can't discuss it without sounding like an idiout. "Well, over here on the bee cee arr three cee enn tee we have a pee ess zee kyew int, see?"
+
+### Use Searchable Names
+The length of a name should correspond to the size of its scope.
+
+### Avoid Encodings
+
+### Hungarian Notation
+Not required anymore.
+
+### Member Prefixes
+Not required anymore, just adds up to the clutter. You sould be using a programming environment that highlights or colorizes members to make them distinct.
+
+### Interfaces and Implementations
+These are sometimes special case for encodings. Avoid using `I` for an interface, encode the implementation instead, i.e. instead of `IShapeFactory` implemented by `ShapeFactory`, use `ShapeFactory` implemented by `ShapeFactoryImpl`.
+
+### Avoid Mental Mapping
+
+### Class Names
+Classes and objects sould have noun or noun phrase names like `Customer`, `WikiPage`, `Account` and `AddressParser`. Avoid words like `Manager`, `Processor`, `Data` or `Info` in the name of a class. A class name should not be a verb.
+
+### Method Names
+
 
